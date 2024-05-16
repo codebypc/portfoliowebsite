@@ -1,0 +1,276 @@
+/* Global CSS reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif;
+
+  h1 {
+    font-size: 60px;
+    font-weight: 800;
+  }
+  a {
+    font-size: large;
+  }
+  p {
+    font-size: 30px;
+  }
+}
+
+nav ul a:hover {
+  padding: 0 10px;
+  border-radius: 5px;
+}
+
+/* Set height, width, and background color for the entire document */
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+/* Styles for the navigation bar */
+nav {
+  padding: 10px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #004174;
+  position: relative;
+  height: 70px;
+  width: auto;
+}
+
+/* Styles for the navigation menu */
+nav ul {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+}
+
+nav ul a {
+  list-style-type: none;
+  color: white;
+  text-decoration: none;
+  padding: 0 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+/* Styles for the logo */
+.logo {
+  color: white;
+  margin-bottom: 20px;
+}
+
+/* Styles for the menu icon */
+.menu-icon i {
+  color: white;
+  font-size: 30px;
+}
+
+/* Initially hide the menu icon */
+.menu-icon {
+  display: block;
+}
+
+/* Hide the menu icon for screens wider than 600px */
+@media (min-width: 680px) {
+  .menu-icon {
+    display: none;
+  }
+}
+
+/* Media query for screens with a maximum width of 600px */
+@media (max-width: 680px) {
+  /* Styles for the collapsed menu */
+  .mobhead h1 {
+    font-size: 25px;
+  }
+  .mobhead p {
+    font-size: 15px;
+  }
+
+  .skillset {
+    display: flex;
+  }
+
+  .cardmain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .container-hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+  }
+  .left {
+    text-align: center;
+  }
+  .left .icons {
+    text-align: center;
+    display: inline;
+  }
+
+  .right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200;
+    height: 150px;
+  }
+  .right:hover {
+    transform: scale(1.5);
+  }
+
+  nav ul {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    text-align: center;
+    background-color: #004174;
+
+    overflow: hidden;
+    max-height: 0; /* Initially hide the menu */
+    transition: max-height 0.5s ease; /* Apply transition for smooth animation */
+  }
+  .menu-icon i {
+    color: white;
+    font-size: 30px;
+  }
+  .menu-icon {
+    color: white;
+  }
+
+  nav ul a {
+    list-style-type: none;
+    color: white;
+    text-decoration: none;
+    margin-top: 10px;
+    padding: 10px;
+    border-bottom: 1px solid;
+  }
+
+  /* Styles for the expanded menu */
+  nav ul.expanded {
+    max-height: 500px; /* Show the expanded menu */
+  }
+}
+
+/* ===============hero sectio */
+
+.container-hero {
+  background-image: url("/public/pattern.svg");
+  background-size: auto;
+  background-position: center;
+  object-fit: fill;
+  display: flex;
+  justify-content: space-around;
+  gap: 15px;
+  align-items: center;
+  padding: 0 auto;
+}
+
+/* --------------------hero section   */
+
+.right {
+  width: auto;
+  height: auto;
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 46% 61% 42% 88% / 81% 65% 25% 69%;
+  align-items: center;
+
+  background-repeat: no-repeat;
+  background-size: cover; /* Ensure the image covers the entire container */
+}
+.left button,
+.icons,
+h2,
+h1,
+p {
+  margin-top: 10px;
+  margin-right: 30px;
+  padding: 10px;
+}
+.left button {
+  margin-top: 30px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+.left {
+  margin-top: 30px;
+  margin-left: 10px;
+}
+
+/* icons */
+.icons {
+  display: flex;
+  gap: 8px;
+}
+.icons i {
+  background-color: #0c216e;
+  padding: 10px;
+  cursor: pointer;
+  color: #ef56e0;
+  border-radius: 50%;
+  box-shadow: 2px 2px 15px 10px rgb(96, 17, 95);
+}
+.icons i:hover {
+  background-color: #ef56e0;
+  padding: 10px;
+  cursor: pointer;
+  color: #0c216e;
+  border-radius: 50%;
+  box-shadow: 2px 2px 15px 10px rgb(47, 10, 47);
+}
+
+/* Skillls   */
+
+.projcon {
+  display: flex;
+  flex-direction: column;
+}
+
+.ProjContainer {
+  display: flex;
+  width: 500px;
+}
+
+.scroll-text {
+  overflow: hidden;
+  white-space: nowrap;
+  animation: scroll 5s infinite linear;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.headtest {
+  transition: all.5s;
+}
+.headtest h1 {
+  font-size: 20px;
+}
+
+.headtest:hover {
+  transform: scale(1.2);
+}
