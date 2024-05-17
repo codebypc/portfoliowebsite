@@ -1,9 +1,11 @@
 /* FAQ Section */
 .faq-section {
-  max-width: 500px;
+  /* max-width: 500px; */
   margin: 0 auto;
-  width: 500px;
+  /* width: 500px; */
   padding: 20px;
+}
+.faqcon {
 }
 
 .imgfaq img {
@@ -23,6 +25,12 @@
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  background-image: url(/public/bgfaq.svg);
+  background-size: cover;
+  border-radius: 10px;
+  box-shadow: 10px 10px 5px 10px;
+
+  margin: 10px;
 }
 
 /* Individual FAQ Question */
@@ -66,4 +74,53 @@
   margin: 0;
   padding: 15px;
   background-color: #fff;
+}
+
+.offcanvas-menu {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 250px; /* Adjust width as needed */
+  background-color: #fff;
+  transition: transform 0.3s ease;
+  z-index: 1000; /* Ensure it's above other content */
+}
+
+.offcanvas-menu.open.left {
+  transform: translateX(-100%);
+}
+
+.offcanvas-menu.open.right {
+  transform: translateX(0);
+}
+
+.menu-toggle {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  cursor: pointer;
+}
+
+.menu {
+  padding-top: 50px;
+}
+
+.menu ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.menu ul li {
+  padding: 10px 0;
+  cursor: pointer;
+}
+
+.content {
+  padding: 20px;
+}
+
+/* Styling for the off-canvas menu when positioned on the right side */
+.offcanvas-menu.right {
+  right: 0;
+  left: auto;
 }

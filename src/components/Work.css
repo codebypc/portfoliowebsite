@@ -4,6 +4,9 @@
   justify-content: center;
   width: 100%;
   flex-wrap: wrap;
+  background-image: url("/public//backproj.svg");
+  -webkit-box-shadow: -2px -1px 42px 15px #eb78ff;
+  box-shadow: -2px -1px 42px 15px #eb78ff;
 
   padding: 20px;
 }
@@ -70,4 +73,15 @@
 .hoverforstc:active {
   background: var(--color);
   color: #fff;
+}
+
+.backcoll {
+  background: rgba(124, 21, 176, 0.5);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5.7px);
+  -webkit-backdrop-filter: blur(5.7px);
+  border: 1px solid rgba(124, 21, 176, 1);
+  /* margin: 5px; */
+  padding: 10px;
 }

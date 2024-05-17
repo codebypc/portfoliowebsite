@@ -33,28 +33,28 @@ export const Skills = () => {
           </div>
           <div className="skillset">
             <div className="skill">
-              <FaHtml5 style={{ fontSize: "120px" }} />
+              <FaHtml5 style={{ fontSize: "80px" }} className="" />
             </div>
             <div className="skill">
-              <IoLogoCss3 style={{ fontSize: "120px" }} />
+              <IoLogoCss3 className="" style={{ fontSize: "80px" }} />
             </div>
             <div className="skill">
-              <DiJavascript1 style={{ fontSize: "120px" }} />
+              <DiJavascript1 className="" style={{ fontSize: "80px" }} />
             </div>
             <div className="skill">
-              <FaReacteurope style={{ fontSize: "120px" }} />
+              <FaReacteurope className="" style={{ fontSize: "80px" }} />
             </div>
             <div className="skill">
-              <FaBootstrap style={{ fontSize: "120px" }} />
+              <FaBootstrap className="" style={{ fontSize: "80px" }} />
             </div>
             <div className="skill">
-              <TbBrandTailwind style={{ fontSize: "120px" }} />
+              <TbBrandTailwind className="" style={{ fontSize: "80px" }} />
             </div>
             <div className="skill">
-              <FaGithubAlt style={{ fontSize: "120px" }} />
+              <FaGithubAlt style={{ fontSize: "80px" }} />
             </div>
             <div className="skill">
-              <FaWordpressSimple style={{ fontSize: "120px" }} />
+              <FaWordpressSimple style={{ fontSize: "80px" }} />
             </div>
           </div>
         </div>

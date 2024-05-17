@@ -28,9 +28,7 @@ export const Footer = () => {
                   SUBSCRIBE
                 </button>
                 <p class="text-gray-500 text-sm md:ml-6 md:mt-0 mt-2 sm:text-left text-center">
-                  Bitters chicharrones fanny pack
                   <br class="lg:block hidden" />
-                  waistcoat green juice
                 </p>
               </div>
               <span class="inline-flex lg:ml-auto lg:mt-0 mt-6 w-full justify-center md:justify-start md:w-auto">
@@ -113,7 +111,7 @@ export const Footer = () => {
                 </a>
               </p>
               <span class="sm:ml-auto sm:mt-0 mt-2 sm:w-auto w-full sm:text-left text-center text-gray-500 text-sm">
-                Enamel pin tousled raclette tacos irony
+                Thank you for scrolling to the bottom..
               </span>
             </div>
           </div>

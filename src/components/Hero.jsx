@@ -14,6 +14,8 @@ import { ContactForm } from "./ContactForm";
 import { TypingEffect } from "./TypingEffect";
 import AOS from "aos"; // Import AOS library
 import "aos/dist/aos.css"; // Import AOS CSS file
+import { Download } from "./Download";
+import { ScrollToTop } from "./ScrollToTop";
 
 export const Hero = () => {
   return (
@@ -26,8 +28,8 @@ export const Hero = () => {
             </h1>
             <h2>And I'm a Frontend Developer</h2>
             <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Consequuntur, amet!
+              I know stuff like HTML, CSS, JavaScript, React.js, Bootstrap,
+              MUI..
             </p>
           </div>
 
@@ -37,7 +39,9 @@ export const Hero = () => {
             <i class="fa-brands fa-github"></i>
             <i class="fa-brands fa-linkedin"></i>
           </div>
-          <button className="btn">Download CV</button>
+          <button className="btn">
+            <Download />
+          </button>
         </div>
         <div className="right">
           <div>
@@ -88,6 +92,7 @@ export const Hero = () => {
 
       <ContactForm />
       <Footer />
+      <ScrollToTop />
     </>
   );
 };

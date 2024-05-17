@@ -7,6 +7,9 @@ import { Testomonial } from "./components/Testomonial";
 import { Project } from "./components/Project";
 import { FAQ } from "./components/FAQ";
 import { TypingEffect } from "./components/TypingEffect";
+import { Download } from "./components/Download";
+import { ScrollSpy } from "bootstrap";
+import { ScrollToTop } from "./components/ScrollToTop";
 
 function App() {
   return (
@@ -14,6 +17,8 @@ function App() {
       <Landing />
       {/* <FAQ /> */}
       {/* <Testomonial /> */}
+      {/* <Download /> */}
+      {/* <ScrollToTop /> */}
     </div>
   );
 }

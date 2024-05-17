@@ -2,7 +2,7 @@ import React from "react";
 import "./Project.css";
 import { FaExternalLinkAlt } from "react-icons/fa";
 
-export const Project = ({ imglink, title, para }) => {
+export const Project = ({ imglink, title, para, linktext }) => {
   return (
     <div
       // data-aos="fade-down"
@@ -20,18 +20,22 @@ export const Project = ({ imglink, title, para }) => {
       </div>
 
       <div className="desc">
-        <button>HTML</button>
-        <button>CSS</button>
-        <button>JavaScript</button>
-        <button>React</button>
+        <button>#HTML</button>
+        <button>#CSS</button>
+        <button>#JavaScript</button>
+        <button>#React</button>
       </div>
 
       <div className="footersection">
         <button>
-          Github <i class="fa-brands fa-github"></i>
+          <a target="_blank" href="https://github.com/pcprajapat001/firststep">
+            Github <i class="fa-brands fa-github"></i>
+          </a>
         </button>
-        <button>
-          Live <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        <button style={{ backgroundColor: "black" }}>
+          <a target="_blank" href={linktext}>
+            Live <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </a>
         </button>
       </div>
     </div>
